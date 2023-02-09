@@ -1,29 +1,89 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project Soundboard </title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Project Soundboard</title>
+    <link rel="stylesheet" href="css/general.css">
+
     <link href="https://allfont.net/allfont.css?fonts=dpcomic-regular" rel="stylesheet" type="text/css" />
     <link rel="icon" href="img/logo.ico" type="image/x-icon">
-  </head>
-  <body>
-  <nav>
-    <img src="img/LogoRounded.png" class ="logo" alt="logo" >
-    <ul>
-    <li class="home"><a href="home.php">Home</a></li>
-    <li class="profiles"><a href="home.php">Profiles</a></li>
-    <li class="settings"><a href="home.php">Settings</a></li>
-    <li class="soundlibrary"><a href="home.php">Sound Library</a></li>
-      <img src="img/Rasberry%20Logo.png" class ="rasberry" alt="logo" >
-    </ul>
 
-  </nav>
-    <main class="background">
-        <h1 class="title">Welcome to My Website</h1>
-    </main>
-	<script src="index.js"></script>
-  </body>
+  </head>
+
+  <body>
+
+        <main>
+
+            <nav>
+
+                <a href="index.html"><img id="retropadLogo" src="img/LogoRounded.png"  alt="logo" ></a>
+        
+                <ul>
+        
+                    <li class="nav" id="home"><a href="index.html">Home</a></li>
+                    <li class="nav" id="profiles"><a href="profils.html">Profiles</a></li>
+                    <li class="nav" id="settings"><a href="">Settings</a></li>
+                    <li class="nav" id="soundlibrary"><a href="soundLibrary.html">Sound Library</a></li>
+        
+                </ul>
+        
+                <img src="img/Rasberry%20Logo.png" id="rasberry" alt="logo" >
+        
+            </nav>
+
+            <section class="Bar">
+
+                <section class="ContourBar">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id facilisis tortor, quis bibendum lacus. Quisque risus est, rhoncus non accumsan sed, congue sed tellus. Nunc vel pharetra erat. In ultricies sem ut eros porttitor, scelerisque venenatis elit vestibulum. elementum porttitor augue ut mattis.
+                    </p>
+                    <a href="" class="textbar1">Profiles</a>
+
+                </section>
+
+                <section class="ContourBar">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id facilisis tortor, quis bibendum lacus. Quisque risus est, rhoncus non accumsan sed, congue sed tellus. Nunc vel pharetra erat. In ultricies sem ut eros porttitor, scelerisque venenatis elit vestibulum. elementum porttitor augue ut mattis.
+                    </p>
+                    <a href="" class="textbar2">Settings</a>
+
+                </section>
+
+                <section class="ContourBar">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id facilisis tortor, quis bibendum lacus. Quisque risus est, rhoncus non accumsan sed, congue sed tellus. Nunc vel pharetra erat. In ultricies sem ut eros porttitor, scelerisque venenatis elit vestibulum. elementum porttitor augue ut mattis.
+                    </p>
+                    <a href="" class="textbar3">SoundLibrary</a>
+
+                </section>
+                                <div class="popup" style="display:none;">
+                    <button class="buttonclose">X</button>
+                    <p class="TEXTPOPUP">SETTINGS</p>
+                    <p class="TEXTPOPUP">Volume</p>
+                    <p class="TEXTPOPUP">Bass</p>
+                      <p class="TEXTPOPUP">SETTINGS</p>
+                    <p class="TEXTPOPUP">Volume</p>
+                    <p class="TEXTPOPUP">Bass</p>
+
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+        <video autoplay loop>
+
+            <source src="img/neon_sunset.mp4" type="video/mp4">
+    
+        </video>
+
+    </body>
+
+<footer>
+    <script src="js/main.js"></script>
+</footer>
+
+
 </html>
