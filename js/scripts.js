@@ -1,6 +1,6 @@
 document.getElementById("settings").addEventListener("click", function(e) {
   e.preventDefault();
-  document.querySelector(".popup").style.display = "block";
+  document.querySelector(".popup").style.display = "flex";
 });
 
 document.querySelector(".buttonclose").addEventListener("click", function() {
