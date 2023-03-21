@@ -1,0 +1,70 @@
+/**************************************************************************************************************************
+***************************************************** SoundLibrary *******************************************************
+***************************************************************************************************************************/
+#SoundBox{
+    display: grid;
+    grid-template-areas:
+        "title title title"
+        ". . ."
+        ". . .";
+    width: 75vw;
+    align-items: center;
+}
+
+.title {
+  grid-area: title;
+  text-align: end;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.searchbox{
+
+       display: flex;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+
+background: rgba(124, 71, 114, 0.8);
+border: 3px solid #FFFF07;
+border-radius: 25px;
+}
+
+
+input[type='search']{
+    flex-basis: 400px;
+    -webkit-appearance: none;
+    border: 1px solid #000;
+    padding: 4px 12px;
+    border-radius: 8px;
+}
+
+input[type='image']{
+
+    background-image: url("/img/search.png");
+}
+
+.tagsbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+::placeholder{
+    font-family: 'DPComic';
+font-style: normal;
+font-weight: 400;
+line-height: 45px;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.7);
+}
