@@ -12,6 +12,7 @@
 .title {
     grid-area: title;
     text-align: end;
+    white-space: pre;
 }
 
 .box {
