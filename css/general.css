@@ -65,6 +65,7 @@ nav {
     padding: 1% 0;
     background-color: #33012A;
     border: 1px solid #7C4772;
+    z-index: 3;
 }
 
 nav a {
@@ -151,16 +152,16 @@ video {
 }
 
 .textpopup {
-width: 329px;
-height: 64px;
-font-family: 'DPComic';
-font-style: normal;
-font-weight: 400;
-font-size: 60px;
-line-height: 60px;
-text-align: center;
-color: #FFFFFF;
-BOTTOM: -9VH;
-right: -5vh;
-color: #FFFFFF;
+    width: 329px;
+    height: 64px;
+    font-family: 'DPComic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    bottom: -9VH;
+    right: -5vh;
+    color: #FFFFFF;
 }
