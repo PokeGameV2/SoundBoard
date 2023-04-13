@@ -1,13 +1,16 @@
 /**************************************************************************************************************************
 ***************************************************** SoundLibrary *******************************************************
 ***************************************************************************************************************************/
-#SoundBox{
+#SoundBox {
     display: grid;
-    grid-template-areas:
-        "title title title"
-        ". . ."
-        ". . .";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "title title title"
+    ". . ."
+    ". . ."
+    ". . ."; 
     width: 75vw;
+    gap: 0 20px;
     align-items: center;
 }
 
@@ -16,61 +19,82 @@
   text-align: end;
 }
 
-.box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-
 .searchbox{
-
-       display: flex;
+    height: 60px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
-    box-sizing: border-box;
-
-background: rgba(124, 71, 114, 0.8);
-border: 3px solid #FFFF07;
-border-radius: 25px;
-}
-
-
-input[type='search']{
-    flex-basis: 400px;
-     background-color:transparent;
-    font-size: 6vh;
+    background: rgba(124, 71, 114, 0.8);
+    border: 3px solid #FFFF07;
     border-radius: 25px;
 }
 
-input[type='image']{
-
+input[type='search'], select {
+    font-family: 'DPComic';
+    color: rgba(255, 255, 255, 0.7);
+    background-color: transparent;
+    font-size: 6vh;
+    border: none;
 }
 
-input[type=submit] {
-    background:url(/img/search.png);
-    border:0;
-    display:block;
-    height:Change_TO_backgroundimageheight;
-    width: Change_To_backgroundimageWidth;
+input[type='search'] {
+    width: 80%;
 }
 
-.tagsbox{
+#searchSubmit {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+#searchIcon {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.7);
+    justify-self: center;
+}
+
+.box {
+    height: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    border-radius: 20px;
+    background-color: rgba(124, 71, 114, 0.8);;
 }
 
+.box > .tag-select {
+    width: 295px;
+    height: 86px;
+    position: relative;
+    background-color: transparent;
+    appearance: none;
+}
 
+.tag-select::after {
+    font-family: "Font Awesome 6 Solid";
+    content: "\f0d7";
+    font-size: 24px;
+    font-weight: 900;
+    left: -5px;
+    position: absolute;
+    top:0;
+    display: inline-block;
+    text-rendering: auto;
+}
+
+option {
+    font-family: 'DPComic';
+    color:rgba(124, 71, 114, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0 0 20px 20px;
+}
 
 ::placeholder{
     font-family: 'DPComic';
-font-style: normal;
-font-weight: 400;
-line-height: 45px;
-text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+}
 
-color: rgba(255, 255, 255, 0.7);
+:focus {
+    outline: none;
+    caret-color: rgba(255, 255, 255, 0.7);
 }

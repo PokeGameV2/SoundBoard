@@ -11,6 +11,8 @@
     <link href="https://allfont.net/allfont.css?fonts=dpcomic-regular" rel="stylesheet" type="text/css" />
     <link rel="icon" href="img/logo.ico" type="image/x-icon">
 
+    <script src="https://kit.fontawesome.com/3194411bd1.js"></script>
+
   </head>
 
   <body>
@@ -50,19 +52,28 @@
 
                <h1 class="title">Sound Library</h1>
 
-                <div class="searchbox">
+                <form class="searchbox">
 
-                    <input type="search" id="maRecherche" name="q"
-                    placeholder="Search Song">
-                   <input type="image" src="/img/search.png" />
+                    <input type="search" placeholder="Search a sound" />
+                    <button id="searchSubmit" type="submit">
 
-                </div>
+                        <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
 
-                <div class="tagsbox">
+                    </button>
 
-                    <a class="ItemText" href ="" >Profile 2</a>
+                </form>
 
-                </div>
+                <form class="box">
+
+                    <select class="tag-select">
+
+                        <option value="">Tags</option>
+                        <option value="movie">Movie / TV Series</option>
+                        <option value="game">Video Games</option>
+
+                    </select>
+
+                </form>
 
                 <div class="box">
 
@@ -121,7 +132,7 @@
     <footer>
 
         <script src="js/scripts.js"></script>
-        
+
     </footer>
 
 </html>
